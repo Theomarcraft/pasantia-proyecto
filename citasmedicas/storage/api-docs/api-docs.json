@@ -1,0 +1,80 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Citas Médicas",
+        "description": "Documentación generada para el sistema de citas médicas",
+        "contact": {
+            "email": "soporte@citasmedicas.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "Servidor local"
+        }
+    ],
+    "paths": {
+        "/api/test": {
+            "get": {
+                "tags": [
+                    "Prueba"
+                ],
+                "summary": "Endpoint de prueba",
+                "operationId": "7c2e6b5602b42636e41cc7228a9d8765",
+                "responses": {
+                    "200": {
+                        "description": "Swagger está leyendo este controlador"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Appointment": {
+                "title": "Cita médica",
+                "required": [
+                    "doctor_id",
+                    "user_id",
+                    "appointment_date",
+                    "description"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "doctor_id": {
+                        "type": "integer",
+                        "example": 3
+                    },
+                    "user_id": {
+                        "type": "integer",
+                        "example": 5
+                    },
+                    "appointment_date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2025-09-30 10:00:00"
+                    },
+                    "description": {
+                        "type": "string",
+                        "example": "Consulta general"
+                    },
+                    "status": {
+                        "type": "string",
+                        "example": "pendiente"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Prueba",
+            "description": "Prueba"
+        }
+    ]
+}

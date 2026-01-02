@@ -1,0 +1,135 @@
+/* 🌙 Tema oscuro para react-big-calendar */
+.rbc-calendar {
+  background-color: #0f172a; /* gris oscuro */
+  color: #e2e8f0; /* texto claro */
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.rbc-month-view {
+  background-color: #1e293b; /* un poco más claro para el contraste */
+}
+
+.rbc-header {
+  background-color: #334155;
+  color: #93c5fd;
+  border-bottom: 1px solid #475569;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.rbc-date-cell {
+  color: #cbd5e1;
+}
+
+.rbc-today {
+  background-color: #1d4ed8 !important;
+  color: white !important;
+  border-radius: 6px;
+}
+
+.rbc-off-range-bg {
+  background-color: #0f172a; /* elimina los cuadros blancos fuera del mes */
+}
+
+.rbc-off-range {
+  color: #475569; /* texto más tenue */
+}
+
+.rbc-event {
+  background-color: #2563eb !important;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 2px 4px;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all 0.2s esae;
+}
+
+.rbc-day-bg {
+  border: 1px solid #334155;
+}
+
+.rbc-month-row {
+  border-top: 1px solid #334155;
+}
+
+
+/* Estilos Responsive (Móviles)*/
+
+@media (max-width: 768xp) {
+  /* Reducir tamaño general */
+  .rcb-calendar {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+
+  /* Encabezados más compactos */
+  .rbc-header{
+    padding: 4px 0;
+    font-size: 0.75rem;
+  }
+
+  /* Celdas más pequeñas */
+  .rbc-month-view {
+    font-size: 0.7rem;
+  }
+
+  /* Eventos con menos padding y texto ajustado */
+  .rbc-event{
+    font-size: 0.7rem;
+    padding:1px 2px;
+    border-radius: 4px;
+    line-height: 1.1;
+  }
+
+  /* Aumentar espacio táctil (evitar clics accidentales) */
+  .rbc-row-segment {
+    min-height: 24px;
+  }
+
+  /* Ajustar fechas para mejor lectura */
+  .rcb-date-cell {
+    font-size: 0.65rem;
+    padding: 2px;
+    text-align: center;
+  }
+
+  /* Toolbar (botones de navegación del calendario) */
+  .rbc-toolbar {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rbc-toolbar button {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+
+  /* Margen entre filas del calendario */
+  .rcb-month-row {
+    margin-bottom: 4px;
+  }
+}
+
+/* 📲 Aún más compacto para móviles muy pequeños (menores a 480px) */
+@media (max-width: 480px) {
+  .rbc-calendar {
+    font-size: 0.7rem;
+  }
+
+  .rbc-header {
+    font-size: 0.65rem;
+  }
+
+  .rbc-event {
+    font-size: 0.6rem;
+  }
+
+  .rbc-toolbar button {
+    font-size: 0.7rem;
+  }
+}

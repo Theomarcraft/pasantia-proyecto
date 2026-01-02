@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+
+class RouteServiceProvider extends ServiceProvider
+{
+    /**
+     * Ruta a la que se redirige el usuario después de iniciar sesión
+     *
+     * Puedes cambiarla por '/dashboard', '/home', '/inicio', etc.
+     */
+    public const HOME = '/';
+
+    public function boot(): void
+    {
+        $this->routes(function () {
+            Route::middleware('api')
+                ->prefix('api')
+                ->group(base_path('routes/api.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/web.php'));
+        });
+    }
+}
