@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Laravel
+vendor/
+.env
+storage/logs/
+storage/framework/
+bootstrap/cache/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
