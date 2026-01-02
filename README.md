@@ -5,6 +5,12 @@ El sistema permite agendar, administrar y gestionar citas de forma eficiente, ap
 
 ---
 
+## ⚠️ Nota importante
+
+Este proyecto corresponde a una demostración frontend.
+El backend (Laravel) se ejecuta en entorno local y no está
+desplegado en producción.
+
 ## 🚀 Tecnologías utilizadas
 
 ### Frontend
