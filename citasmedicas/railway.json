@@ -1,0 +1,8 @@
+{
+  "build": {
+    "extensions": [
+      "gd",
+      "pdo_mysql"
+    ]
+  }
+}
